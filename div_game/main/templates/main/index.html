@@ -1,0 +1,34 @@
+{% extends "main/layout.html" %} {% block title%}Главная{%endblock title %}
+{%load static %} {%block wrapper %}
+<div class="wrapper">
+	<div class="card">
+		<div class="card__big-title">Игра</div>
+		<div class="card__row">
+			<div class="card__column">
+				<button type="submit" class="button">
+					<div class="card__image">
+						<img src="{% static 'main/img/kamen.png' %}" alt="" />
+					</div>
+					<div class="card__content">Камень</div>
+				</button>
+			</div>
+			<div class="card__column">
+				<button type="submit" class="button">
+					<div class="card__image">
+						<img src="{% static 'main/img/noznicy.png' %}" alt="" />
+					</div>
+					<div class="card__content">Ножницы</div>
+				</button>
+			</div>
+			<div class="card__column">
+				<button type="submit" class="button">
+					<div class="card__image">
+						<img src="{% static 'main/img/paper.png' %}" alt="" />
+					</div>
+					<div class="card__content">Бумага</div>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div>{% endblock wrapper %}</div>
+</div>
